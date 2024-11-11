@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palabras</title>
+</head>
+<body>
+<div style="text-align: center; margin-top: 100px;">
+    <h1>Count of words</h1>
+    <form action="/count" method="post">
+        <textarea name="text" rows="5" cols="40" placeholder="Say Something..."></textarea>
+        <br><br>
+        <button type="submit">Count</button>
+    </form>
+    <h2>The number of words in your input is: <span th:text="${wordCount}"></span></h2>
+</div>
+</body>
+</html>
